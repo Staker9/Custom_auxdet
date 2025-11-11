@@ -4,7 +4,7 @@ import torch.nn as nn
 from typing import Tuple, List
 
 from local_layers import ConvModule, BaseModule
-from Custom.local_mmdet.registry import MODELS
+from local_mmdet.registry import MODELS
 
 # ------------------------------------------------------------
 # Bottleneck block (ResNet-50/101 style, expansion=4)

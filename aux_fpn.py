@@ -6,7 +6,7 @@ from typing import List, Tuple, Union
 from local_layers import ConvModule, BaseModule
 from torch import Tensor
 
-from Custom.local_mmdet.registry import MODELS
+from local_mmdet.registry import MODELS
 from local_mmdet.utils import ConfigType, MultiConfig, OptConfigType
 
 from local_mmdet.models.utils import DMLPAttention, FCResLayer

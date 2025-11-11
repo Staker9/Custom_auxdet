@@ -6,7 +6,7 @@ from torch import Tensor
 
 from local_mmdet.registry import MODELS
 from local_mmdet.utils import ConfigType, OptMultiConfig
-from Custom.local_mmdet.models.roi_heads.roi_extractors.base_roi_extractor import BaseRoIExtractor
+from local_mmdet.models.roi_heads.roi_extractors.base_roi_extractor import BaseRoIExtractor
 
 
 @MODELS.register_module()

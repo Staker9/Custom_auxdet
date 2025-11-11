@@ -12,7 +12,7 @@ from local_mmdet.registry import MODELS
 from local_mmdet.structures.bbox import (cat_boxes, empty_box_as, get_box_tensor,
                                    get_box_wh, scale_boxes)
 from local_mmdet.utils import InstanceList, MultiConfig, OptInstanceList
-from Custom.local_mmdet.models.dense_heads.anchor_head import AnchorHead
+from local_mmdet.models.dense_heads.anchor_head import AnchorHead
 
 
 @MODELS.register_module()

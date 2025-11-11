@@ -8,9 +8,9 @@ from local_mmdet.registry import MODELS, TASK_UTILS
 from local_mmdet.structures import DetDataSample, SampleList
 from local_mmdet.structures.bbox import bbox2roi
 from local_mmdet.utils import ConfigType, InstanceList
-from Custom.local_mmdet.models.task_modules.samplers import SamplingResult
-from Custom.local_mmdet.models.utils import empty_instances, unpack_gt_instances
-from Custom.local_mmdet.models.roi_heads.base_roi_head import BaseRoIHead
+from local_mmdet.models.task_modules.samplers import SamplingResult
+from local_mmdet.models.utils import empty_instances, unpack_gt_instances
+from local_mmdet.models.roi_heads.base_roi_head import BaseRoIHead
 
 
 @MODELS.register_module()

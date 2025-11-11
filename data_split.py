@@ -14,7 +14,7 @@ from typing import Dict, Optional, Tuple
 DATA_DIR = r"C:\Users\IDAL\Desktop\WACV\frames"  # 원본 이미지들이 있는 루트 폴더
 SPLIT_JSONS: Dict[str, str] = {
     "train": r"C:\Users\IDAL\Desktop\WACV\Train.json",
-    "val":   r"C:\Users\IDAL\Desktop\WACV\Train.json",
+    "val":   r"C:\Users\IDAL\Desktop\WACV\Valid.json",
     # 필요하면 주석 해제
     "test":  r"C:\Users\IDAL\Desktop\WACV\TestNoLabels.json",
 }
