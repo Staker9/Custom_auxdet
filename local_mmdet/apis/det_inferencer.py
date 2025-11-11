@@ -19,11 +19,11 @@ from mmengine.runner.checkpoint import _load_checkpoint_to_model
 from mmengine.visualization import Visualizer
 from rich.progress import track
 
-from mmdet.evaluation import INSTANCE_OFFSET
-from mmdet.registry import DATASETS
-from mmdet.structures import DetDataSample
-from mmdet.structures.mask import encode_mask_results, mask2bbox
-from mmdet.utils import ConfigType
+from Custom.local_mmdet.evaluation import INSTANCE_OFFSET
+from Custom.local_mmdet.registry import DATASETS
+from Custom.local_mmdet.structures import DetDataSample
+from Custom.local_mmdet.structures.mask import encode_mask_results, mask2bbox
+from Custom.local_mmdet.utils import ConfigType
 from ..evaluation import get_classes
 
 try:

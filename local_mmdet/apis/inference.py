@@ -15,8 +15,8 @@ from mmengine.model.utils import revert_sync_batchnorm
 from mmengine.registry import init_default_scope
 from mmengine.runner import load_checkpoint
 
-from mmdet.registry import DATASETS
-from mmdet.utils import ConfigType
+from Custom.local_mmdet.registry import DATASETS
+from Custom.local_mmdet.utils import ConfigType
 from ..evaluation import get_classes
 from Custom.local_mmdet.registry import MODELS
 from ..structures import DetDataSample, SampleList
