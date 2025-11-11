@@ -19,4 +19,9 @@ else:
             return inputs * torch.sigmoid(inputs)
 
 
-MODELS.register_module(module=SiLU, name='SiLU')
+try:
+    MODELS.register_module(module=SiLU, name='SiLU')
+except KeyError:
+    # Allow environments where SiLU has already been registered elsewhere.
+    if MODELS.module_dict.get('SiLU') is not SiLU:
+        raise
