@@ -336,14 +336,14 @@ class LocalFasterRCNN(nn.Module):
 # =========================
 def main():
     # ---- 경로/클래스 세팅 ----
-    CLASSES = ('cat', 'dog')  # ★ 네 데이터 클래스명으로 변경
+    CLASSES = ('person','bicycle','motorcycle','vehicle')  # ★ 네 데이터 클래스명으로 변경
     NUM_CLASSES = len(CLASSES)
 
-    data_root = 'data/mydata'
+    data_root = r"C:\Users\IDAL\Desktop\WACV\frames"
     train_imgs = os.path.join(data_root, 'images/train')
     val_imgs   = os.path.join(data_root, 'images/val')
-    train_ann  = os.path.join(data_root, 'annotations/instances_train.json')
-    val_ann    = os.path.join(data_root, 'annotations/instances_val.json')
+    train_ann  = os.path.join(data_root, 'Train.json')
+    val_ann    = os.path.join(data_root, 'Valid.json')
 
     # ---- Dataset/Dataloader ----
     train_set = CocoLite(train_imgs, train_ann, CLASSES, resize=(1333, 800), train=True)
