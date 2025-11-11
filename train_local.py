@@ -44,9 +44,9 @@ from local_mmdet.evaluation.functional import bbox_overlaps
 
 DEVICE = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
-# =========================
+
 # 1) COCO Dataset (간단 버전)
-# =========================
+
 class CocoLite(Dataset):
     def __init__(self, img_root, ann_file, classes: Tuple[str, ...], resize=(1333, 800), train=True):
         self.img_root = img_root
