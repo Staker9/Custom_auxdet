@@ -34,13 +34,13 @@ from standard_roi_head import StandardRoIHead
 from local_layers import batched_nms  # (내부에서 rpn_head도 이미 사용)
 
 # mmdet/mmengine 구성요소들 (레지스트리/러너 없이 직접 호출)
-from mmdet.models.task_modules.prior_generators import AnchorGenerator
-from mmdet.models.task_modules.coders import DeltaXYWHBBoxCoder
-from mmdet.models.roi_heads.bbox_heads import Shared2FCBBoxHead
-from mmdet.models.task_modules.assigners import MaxIoUAssigner
-from mmdet.models.task_modules.samplers import RandomSampler
-from mmdet.structures.bbox import bbox2roi
-from mmdet.evaluation.functional import bbox_overlaps
+from local_mmdet.models.task_modules.prior_generators import AnchorGenerator
+from local_mmdet.models.task_modules.coders import DeltaXYWHBBoxCoder
+from local_mmdet.models.roi_heads.bbox_heads import Shared2FCBBoxHead
+from local_mmdet.models.task_modules.assigners import MaxIoUAssigner
+from local_mmdet.models.task_modules.samplers import RandomSampler
+from local_mmdet.structures.bbox import bbox2roi
+from local_mmdet.evaluation.functional import bbox_overlaps
 
 DEVICE = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
